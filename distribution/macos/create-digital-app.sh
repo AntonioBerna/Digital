@@ -116,7 +116,7 @@ prepare_input() {
 create_app_bundle() {
     echo "🔨 Creating app bundle with jpackage..."
     
-    # Complete jpackage command
+    # Complete jpackage command with file association
     jpackage \
         --input "$INPUT_DIR" \
         --name "$APP_NAME" \
@@ -128,6 +128,7 @@ create_app_bundle() {
         --vendor "$APP_VENDOR" \
         --description "$APP_DESCRIPTION" \
         --dest "$SCRIPT_DIR" \
+        --file-associations "$SCRIPT_DIR/dig-file-association.properties" \
         --verbose
     
     if [ ! -d "$APP_OUTPUT" ]; then

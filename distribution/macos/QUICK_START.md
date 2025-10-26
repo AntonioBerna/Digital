@@ -64,3 +64,21 @@ cp -r Digital.app /Applications/
 ```bash
 make install
 ```
+
+## 🔗 File Association
+
+The app is configured to handle `.dig` files automatically:
+
+### Opening .dig files
+```bash
+# From command line
+open circuit.dig
+
+# Or double-click .dig files in Finder
+```
+
+### File Association Features
+- ✅ **Automatic recognition** of `.dig` files
+- ✅ **Custom icon** for Digital circuit files
+- ✅ **Direct opening** from Finder or command line
+- ✅ **MIME type** support (`application/x-digital-circuit`)
