@@ -92,3 +92,8 @@ nbactions.xml
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# macOS app build artifacts
+distribution/macos/Digital.app/
+distribution/macos/icon.icns
+distribution/macos/jpackage-input/
